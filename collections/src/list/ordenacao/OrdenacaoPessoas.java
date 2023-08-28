@@ -26,13 +26,17 @@ public class OrdenacaoPessoas {
 
     public List<Pessoa> ordenarPorIdade() {
         List<Pessoa> pessoasPorIdade = new ArrayList<>(pessoasList);
-        Collections.sort(pessoasPorIdade);
+        if (pessoasPorIdade.isEmpty()) {
+            Collections.sort(pessoasPorIdade);
+        } else System.out.println("A lista está vazia");
         return pessoasPorIdade;
     }
 
     public List<Pessoa> ordenarPorAltura() {
         List<Pessoa> pessoasPorAltura = new ArrayList<>(pessoasList);
-        pessoasPorAltura.sort(new ComparatorAltura());
+        if (!pessoasPorAltura.isEmpty()) {
+            pessoasPorAltura.sort(new ComparatorAltura());
+        } else System.out.println("A lista está vazia");
         return pessoasPorAltura;
     }
 }
