@@ -69,7 +69,7 @@ public class ListaTarefas {
                     t.setStatusTarefa(true);
                 }
             }
-        } else System.out.println("A lista está vazia");
+        } else System.out.println("O conjunto está vazio");
     }
 
     public void marcarTarefaPendente(String descricao) {
@@ -79,7 +79,7 @@ public class ListaTarefas {
                     t.setStatusTarefa(false);
                 }
             }
-        } else System.out.println("A lista está vazia");
+        } else System.out.println("O conjunto está vazio");
     }
 
     public void limparListaTarefas() {

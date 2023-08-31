@@ -14,7 +14,7 @@ public class ConjuntoConvidados {
     public void removerConvidadoPorCodigoConvite(int codigoConvite) {
         if (!convidadoSet.isEmpty()) {
             convidadoSet.removeIf(c -> c.getCodigoDoConvite() == codigoConvite);
-        } else System.out.println("A lista está vazia");
+        } else System.out.println("O conjunto está vazio");
     }
 
     public int contarConvidados() {

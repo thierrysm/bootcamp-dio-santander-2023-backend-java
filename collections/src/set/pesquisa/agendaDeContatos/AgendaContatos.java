@@ -35,6 +35,6 @@ public class AgendaContatos {
                     c.setNumero(novoNumero);
                 }
             }
-        } else System.out.println("A lista está vazia");
+        } else System.out.println("O conjunto está vazio");
     }
 }
